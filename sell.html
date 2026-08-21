@@ -1,0 +1,26 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8"><title>SEK STORE | ขายสินค้า</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="nav"><div class="nav-in">
+<a class="brand" href="index.html">SEK STORE</a>
+<nav class="nav-links">
+<a href="index.html">หน้าแรก</a><a href="products.html">สินค้า</a><a href="sell.html">ขายสินค้า</a>
+<a href="branches.html">สาขา</a><a href="contact.html">ติดต่อสอบถาม</a><a href="#footer">ท้ายหน้า</a>
+</nav></div></header><main class="section"><div class="container"><div class="kicker">HOW TO SELL</div><h2>ขั้นตอนการขายสินค้า</h2>
+<p class="desc">4 ขั้นตอนง่ายๆ ตั้งแต่ติดต่อร้านจนรับเงิน</p><div class="steps">
+<div class="step"><div class="num">STEP 01</div><h3>ติดต่อหน้าร้าน</h3><p>นำสินค้ามาที่สาขา</p></div>
+<div class="step"><div class="num">STEP 02</div><h3>ร้านเสนอราคา</h3><p>ทีมงานตรวจสภาพ แบรนด์ และตลาด</p></div>
+<div class="step"><div class="num">STEP 03</div><h3>ตัดสินใจขาย</h3><p>เลือกขายหรือรับสินค้ากลับ</p></div>
+<div class="step"><div class="num">STEP 04</div><h3>ยืนยันตัวตน</h3><p>ยืนยันข้อมูลและรับเงิน</p></div></div>
+<section class="section"><div class="card"><h3>แบบฟอร์มผู้ขาย</h3>
+<form class="form" onsubmit="return submitSell(event)">
+<input required type="text" placeholder="ชื่อผู้ขาย">
+<input required type="email" placeholder="อีเมล">
+<fieldset><legend>ประเภทสินค้า</legend>
+<label><input type="radio" name="type" value="เสื้อผ้า" required> เสื้อผ้า</label>
+<label><input type="radio" name="type" value="รองเท้า"> รองเท้า</label>
+<label><input type="radio" name="type" value="อื่นๆ"> อื่นๆ</label></fieldset>
+<label><input type="checkbox" required> ยืนยันว่าข้อมูลถูกต้อง</label>
+<select><optgroup label="แฟชั่น"><option>เสื้อผ้า</option><option>รองเท้า</option></optgroup><optgroup label="อื่นๆ"><option>กระเป๋า</option><option>หมวก</option></optgroup></select>
+<textarea rows="5" placeholder="รายละเอียดสินค้า"></textarea>
+<button class="btn btn-main" type="submit">ส่งข้อมูล</button><button class="btn" type="reset">ล้างข้อมูล</button>
+</form></div></section></div></main><footer id="footer"><div class="container"><b>SEK STORE</b></div></footer>
+<script>function submitSell(e){e.preventDefault();alert('ส่งข้อมูลเรียบร้อย');e.target.reset();return false}</script></body></html>
