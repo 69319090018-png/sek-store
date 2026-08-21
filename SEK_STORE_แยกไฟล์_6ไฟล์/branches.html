@@ -1,0 +1,10 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SEK STORE | สาขา</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="nav"><div class="nav-in"><a class="brand" href="index.html">SEK STORE</a><nav class="nav-links"><a href="index.html">หน้าแรก</a><a href="products.html">สินค้า</a><a href="sell.html">ขายสินค้า</a><a href="branches.html">สาขา</a><a href="contact.html">ติดต่อสอบถาม</a></nav></div></header>
+<main class="section"><div class="container"><div class="kicker">SHOP LIST</div><h2>สาขาของ SEK STORE</h2><p class="desc">คลิกสาขาเพื่อดูรายละเอียด</p><div class="branches">
+<div class="branch" onclick="show('SEK STORE — Central','ชั้น 2 โซนแฟชั่น','10:00–22:00')"><h3>SEK STORE — Central</h3><span>ชั้น 2 โซนแฟชั่น · 10:00–22:00</span></div>
+<div class="branch" onclick="show('SEK STORE — Downtown','อาคาร B ชั้น 1','10:00–21:00')"><h3>SEK STORE — Downtown</h3><span>อาคาร B ชั้น 1 · 10:00–21:00</span></div>
+<div class="branch" onclick="show('SEK STORE — Market','โซน Vintage ชั้น 1','11:00–21:00')"><h3>SEK STORE — Market</h3><span>โซน Vintage ชั้น 1 · 11:00–21:00</span></div>
+</div></div></main>
+<div class="modal" id="modal"><div class="modal-box"><button class="close" onclick="hide()">×</button><div class="kicker">BRANCH</div><h2 id="name"></h2><p id="place"></p><b id="time"></b><br><a class="btn btn-main" href="contact.html">สอบถามสาขา</a></div></div>
+<script>function show(n,p,t){name.textContent=n;place.textContent=p;time.textContent='เปิด '+t;modal.classList.add('show')}function hide(){modal.classList.remove('show')}</script>
+<footer><div class="container"><b>SEK STORE</b></div></footer></body></html>
